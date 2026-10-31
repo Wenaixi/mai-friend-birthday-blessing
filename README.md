@@ -6,7 +6,7 @@
 
 识别群成员生日名片，寿星当天在群或私聊主动道贺，并将生日信息注入麦麦回复上下文。
 
-- **插件目录**：`geffnt_maibot-birthday-plugin`
+- **插件目录**：`wenaixi_mai_friend_birthday_blessing`
 - **生效版本**：`v1.3.2`
 - **开源许可证**：`MIT`
 
