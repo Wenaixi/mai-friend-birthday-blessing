@@ -1,5 +1,11 @@
 # 麦麦祝你生日快乐呀
 
+[![Release](https://img.shields.io/github/v/release/Wenaixi/mai-friend-birthday-blessing?style=flat-square&color=blue&label=release)](https://github.com/Wenaixi/mai-friend-birthday-blessing/releases)
+[![CI](https://img.shields.io/github/actions/workflow/status/Wenaixi/mai-friend-birthday-blessing/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/Wenaixi/mai-friend-birthday-blessing/actions)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.12%20%7C%203.13-blue?style=flat-square)](https://www.python.org/)
+[![MaiBot](https://img.shields.io/badge/MaiBot-1.2%2B-orange?style=flat-square)](https://docs.mai-mai.org)
+
 > 本插件由 [Wenaixi](https://github.com/Wenaixi) 维护，是专为生产环境深度调优的高可用分支。
 
 ## 简介与定位
@@ -7,7 +13,6 @@
 识别群成员生日名片，寿星当天在群或私聊主动道贺，并将生日信息注入麦麦回复上下文。
 
 - **插件目录**：`wenaixi_mai_friend_birthday_blessing`
-- **生效版本**：`v1.3.2`
 - **开源许可证**：`MIT`
 
 ---
