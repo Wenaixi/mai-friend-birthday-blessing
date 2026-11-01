@@ -1,46 +1,22 @@
-# 本地运行产物
+# Python 运行与测试缓存
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-
-.venv/
-venv/
-env/
-
-.idea/
-.vscode/
-*.swp
-*.swo
-.DS_Store
-.claude/
-
-*.log
-*.tmp
-*.bak.*
-
 .pytest_cache/
 .mypy_cache/
-.ruff_cache/
+*.pyc
 
-# ===== 主人本地副本规则 =====
-# 默认忽略敏感文件（含真值密钥）
-config.toml
-config.toml.bak
-config.toml.bak.*
-config.toml.local
-config.local.toml
-config_back/
-cookies-*.json
-data/
-
-# 插件更新器留下的备份
-.update_backups/
-.maibot-release.json
-
-# OMC CLI 状态文件（不纳入仓库）
+# 核心项目记忆库（严禁推送到公共远端）
+CLAUDE.md
+CLAUDE*.md
 .omc/
 
-# 本地专属记忆库（禁止提交与推送）
-CLAUDE.md
+# 本地真实配置与持久数据
+config.toml
+config.toml.*
+data/
+*.db
+*.sqlite*
+*.log
+*.jsonl
+.update_tmp/
