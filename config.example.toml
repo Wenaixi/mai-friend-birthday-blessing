@@ -1,0 +1,47 @@
+# 配置模板：复制为 config.toml 后按需修改。
+# 真实 config.toml 已在 .gitignore 中排除，请勿把填写后的版本提交到版本库。
+# 标注 YOUR_*_HERE 的字段必须替换为实际值才能工作。
+
+[plugin]
+name = "maibot_birthday_plugin"
+config_version = "0.1.0"
+enabled = true
+adapter_plugin_id = "maibot-team.napcat-adapter"
+
+[source]
+include_friends = true
+include_group_members = false
+max_members_per_group = 100
+max_stranger_queries = 300
+stranger_fetch_delay_ms = 800
+refresh_interval_hours = 168
+initial_refresh_delay_seconds = 30
+no_cache = false
+drop_missing = false
+
+[greeting]
+greet_in_group = false
+greet_in_private = false
+private_temp_session = true
+announce_groups = []
+at_person = true
+hour_start = 8
+hour_end = 23
+greeting_template = "🎂 生日快乐，{name}！祝你新的一岁顺顺利利，想做的事都能成～"
+use_llm_polish = true
+llm_task_name = "replyer"
+llm_max_tokens = "YOUR_TOKEN_HERE"
+llm_temperature = 1.0
+
+[prompt]
+inject_prompt = true
+skip_greeted = true
+max_greetings_per_day = 2
+cooldown_seconds = 300.0
+max_names = 5
+include_upcoming_days = 0
+prompt_template = "【生日提醒】今天是 {names} 的生日。请在你这次回复里用自己的话顺带送上一句生日祝福，语气自然、别太正式，一句就够，不用单独再发一条；如果你这轮本来不适合说话，就不用勉强。"
+
+[access]
+admin_user_ids = []
+list_visible_to_all = true
